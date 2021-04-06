@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+<script src="https://kit.fontawesome.com/26d4a64054.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <a href="/create" class="a">Create <i class="fas fa-arrow-right"></i></a>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Actions</th>
+    </tr>
+    {{# each items as | key value|}}
+    <tr>
+      <td>{{key.name}}</td>
+      <td>{{key.description}} </td>
+      <td>
+        <a href="/edit?id={{key._id}}"><i class="fas fa-edit"></i></a>
+        <button class="btn" data-id="{{key._id}}"><i class="fas fa-trash-alt"></i></button>
+      </td>
+    </tr>
+      {{/each }}
+  </table>
+<script src="script/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+{
+  "name": "crud2",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server-express": "^2.22.2",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "express-graphql": "^0.12.0",
+    "express-handlebars": "^5.3.0",
+    "graphql": "^15.5.0",
+    "hbs": "^4.1.1",
+    "mongodb": "^3.6.5",
+    "mongoose": "^5.12.3",
+    "path": "^0.12.7",
+    "router": "^1.3.5"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mery521/node_crud.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Mery521/node_crud/issues"
+  },
+  "homepage": "https://github.com/Mery521/node_crud#readme",
+  "description": ""
+}
